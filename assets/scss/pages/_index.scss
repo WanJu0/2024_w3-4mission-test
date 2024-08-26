@@ -71,6 +71,10 @@
     .classic_list {
       .clssic_item {
         width: 33.33%;
+        h2 {
+          font-style: italic;
+          color: #aa0601;
+        }
       }
     }
   }
@@ -97,6 +101,7 @@
     color: #aa0601;
     text-align: center;
     background-color: #ffffff;
+    font-style: italic;
   }
 }
 .recommend {
@@ -166,5 +171,24 @@
     color: #ffff;
     border: #aa0601;
     margin-top: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .main_content {
+    flex-wrap: wrap;
+    .content_list {
+      width: 50%;
+    }
+  }
+  .classic_main {
+    .container {
+      .classic_list {
+        flex-wrap: wrap;
+        .clssic_item {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+    }
   }
 }
